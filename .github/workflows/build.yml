@@ -12,12 +12,12 @@ on:
         description: 'ImmortalWrt 仓库的名字 (Name of ImmortalWrt repo)'
         type: string
         required: true
-        default: 'immortalwrtARM'
+        default: 'immortalwrt-mt798x-24.10'
       branch:
         description: 'ImmortalWrt 仓库的分支 (Branch of ImmortalWrt repo)'
         type: string
         required: true
-        default: 'mt7986'
+        default: 'cudy'
       multithreading:
         description: '开启多线程编译 (Enable multithreading build)'
         type: boolean
@@ -25,7 +25,7 @@ on:
       ssh:
         description: '使用 ssh 连接到编译环境 (Connect to the build environment using ssh)'
         type: boolean
-        default: false
+        default: true
 
 jobs:
   build:
